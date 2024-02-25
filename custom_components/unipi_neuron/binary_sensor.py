@@ -90,7 +90,7 @@ class UnipiBinarySensor(BinarySensorEntity):
     @property
     def unique_id(self):
         """Return the unique ID of this binary sensor entity."""
-        return f"{self._device}_{self._port}"
+        return f"{self._device}_{self._port}_at_{self._unipi_hub._name}"
 
     # @property
     # def device_class(self):
